@@ -45,23 +45,34 @@
 // Se cambian clases para redefinición de los estilos de un componente
 // tomado de Bootstrap (Aquí NO se toca bootstrap. Se redefine en este archivo todo)
 
-.paginator__box {
-    background-color: $light-gray;   
-    width: auto;
-    padding: 0;
-    margin: 0; 
-  }
+/*
+    padding-left: 39%;
+    padding-right: 39%;
+*/
 
   .paginator {
-    vertical-align: middle;
+    background-color: $light-gray;   
     border-radius: 0.25rem;
     display: flex;
     list-style: none;
+
+    width: 100vw;
+    height: 30vh;
+    top: 60%;
+    margin: 0;
+    padding: 0;
+    align-items: center;     // centrar paginator
+    justify-content: center; // centrar paginator
+
+    /* Centra el paginator pero no con precisión - Se descentra en formato pequeño.
+    width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 39%;
-    padding-right: 39%;
-  
+    padding-left: 39%;       
+    padding-right: 39%; 
+    margin: 0 auto;
+    */
+
     &__item:first-child &__link {
       border-top-left-radius: 1.25rem;    // aplicamos borde redondeado a cada
       border-bottom-left-radius: 1.25rem; // esquina del primer boton
