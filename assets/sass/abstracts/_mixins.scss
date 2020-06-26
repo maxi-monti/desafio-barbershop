@@ -1,0 +1,7 @@
+// mixin que controla el ancho de visualización
+@mixin laptop-view {
+    @media (min-width: #{$min-laptop}) {    // El ancho definido como variable
+      @content;
+    }
+  }
+  

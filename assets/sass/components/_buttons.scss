@@ -1,0 +1,109 @@
+.buttons {
+    margin: 5% 0 0 0;
+    padding: 0;
+}
+
+.buttons__left {
+    border: 1px solid $nickel; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    margin-right: 1%;
+    background-color: $nickel; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font-family: $roboto; /*tipografía texto*/
+    border-radius: 40px; /*bordes redondos*/
+
+    &:hover {
+        background-color: $light-gray;
+    }
+    &:focus {
+        background-color: $nickel;
+        border-color: $light-gray;
+    }
+}
+
+.buttons__right {
+    border: 1px solid $nickel; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: $nickel; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font-family: $roboto; /*tipografía texto*/
+    border-radius: 40px; /*bordes redondos*/
+
+    &:hover {
+        background-color: $light-gray;
+    }
+    &:focus {
+        background-color: $nickel;
+        border-color: $light-gray;
+    }
+}
+
+/* Paginator */
+// Se definen clases de estilo para los controles de paginación
+// Se cambian clases para redefinición de los estilos de un componente
+// tomado de Bootstrap (Aquí NO se toca bootstrap. Se redefine en este archivo todo)
+
+.paginator__box {
+    background-color: $light-gray;   
+    width: auto;
+    padding: 0;
+    margin: 0; 
+  }
+
+  .paginator {
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    display: flex;
+    list-style: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 39%;
+    padding-right: 39%;
+  
+    &__item:first-child &__link {
+      border-top-left-radius: 1.25rem;    // aplicamos borde redondeado a cada
+      border-bottom-left-radius: 1.25rem; // esquina del primer boton
+      margin-left: 0;
+    }
+  
+    &__item:last-child &__link {
+      border-top-right-radius: 1.25rem;     // aplicamos borde redondeado a cada
+      border-bottom-right-radius: 1.25rem;  // esquina del segundo boton
+      margin-left: -1px;
+    }
+  
+    &__item.--active &__link {
+      background-color: $raisin-black;      // Define color de fondo para el controll activo
+      border-color: $raisin-black;
+      color: $white;
+      z-index: 1;
+    }
+  
+    // Define los link del componente. 
+    &__link {
+      background-color: $white;
+      border: 1px solid $nickel;
+      color: $eerie-black;
+      display: block;
+      font-family: $roboto;
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 1.25;
+      margin-left: -1px;
+      padding: 0.5rem 0.75rem;
+      position: relative;
+  
+      // Este include define el tamaño del font de acuerdo a la propiedad 
+      // definida en el mixin
+      @include laptop-view {
+        font-size: $large;
+      }
+    }
+  
+    &__link:hover {           // Hover cambia el color del texto del link
+      color: $nickel;
+      text-decoration: none;
+    }
+  }

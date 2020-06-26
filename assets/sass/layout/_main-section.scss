@@ -1,0 +1,18 @@
+.article {
+    padding: 5% 10%;
+    color: $raisin-black;
+}
+
+.article__date {
+    font-family: $playfair-display;
+    font-size: $large;
+    font-weight: 300;
+}
+
+.article__text {
+    font-family: $roboto;
+    font-size: $medium;
+    font-weight: 300;
+    line-height: 250%;
+}
+

@@ -1,0 +1,33 @@
+// Esquema de colores
+
+// Primer esquema de color
+$white: #fff;
+$platinum: #e6e7e7;
+$light-gray: #d1d1d1; 
+
+// Segundo esquema de color
+$fuzzy-wuzzy: #e56353;
+$ruddy-pink: #d76c69;
+$spanish-pink: #ecbcba;
+
+// Tercer esquema de color
+$eerie-black: #121619;
+$raisin-black: #222323;
+$nickel: #6c6e70;
+
+// Tipografía
+$roboto: 'Roboto', sans-serif;
+$playfair-display: 'Playfair Display', serif;
+
+// Peso de la fuente
+$regular: 400;
+
+// Tamaños de la fuente
+$xx-large: 70px;
+$x-large: 30px;
+$large: 18px;
+$medium: 16px;
+$small: 12px;
+
+// Laptop breakpoints - Define cambio de tamaño de visualización (ver: abstracts/mixins.scss)
+$min-laptop: 992px;

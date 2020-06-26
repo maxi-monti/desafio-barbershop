@@ -1,0 +1,34 @@
+.header {
+  background-image: url('../images/post-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__title {
+  color: $white;
+  text-align: center;
+  font-family: $playfair-display;
+  font-size: $xx-large;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.header__icon {
+    color: $white;
+    padding-left: 50%;
+    padding-bottom: 1%;
+}
+
+.navbar__link-ampersand {
+  color: $white;
+
+  &:hover {
+    color: $light-gray;
+  }
+  &:focus {
+    color: $ruddy-pink;
+  }    
+}
